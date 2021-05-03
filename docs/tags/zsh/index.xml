@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zsh on Channing&#39;s 自话自说...</title>
+    <link>https://oscto.github.io/tags/zsh/</link>
+    <description>Recent content in zsh on Channing&#39;s 自话自说...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 25 Jul 2018 23:04:43 +0800</lastBuildDate><atom:link href="https://oscto.github.io/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu 安装 Oh My Zsh</title>
+      <link>https://oscto.github.io/posts/ubuntu-install-oh-my-zsh/</link>
+      <pubDate>Wed, 25 Jul 2018 23:04:43 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/ubuntu-install-oh-my-zsh/</guid>
+      <description>查看系统支持的 shells
+cat /etc/shells  安装 zsh
+sudo apt install zsh  下载 oh-my-zsh：
+sh -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&amp;quot;  下载 zsh-autosuggestions（历史记录自动完成插件）：
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions  配置 zsh：
+vim ~/.zshrc # 添加插件 plugins=(git autojump zsh-autosuggestions laravel composer history golang ubuntu vagrant)  添加 source：
+source ~/.zshrc  修改为默认 shell
+chsh -s /bin/zsh  参考文献：
+ oh-my-zsh(github) zsh-autosuggestions(github)  </description>
+    </item>
+    
+  </channel>
+</rss>

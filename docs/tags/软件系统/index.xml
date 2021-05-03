@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>软件系统 on Channing&#39;s 自话自说...</title>
+    <link>https://oscto.github.io/tags/%E8%BD%AF%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
+    <description>Recent content in 软件系统 on Channing&#39;s 自话自说...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 08 Dec 2020 13:31:03 +0800</lastBuildDate><atom:link href="https://oscto.github.io/tags/%E8%BD%AF%E4%BB%B6%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu 软件列表</title>
+      <link>https://oscto.github.io/posts/ubuntu/</link>
+      <pubDate>Tue, 08 Dec 2020 13:31:03 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/ubuntu/</guid>
+      <description>记录进几年在 Linux(Ubuntu 系列) Desktop 环境下使用过的软件 </description>
+    </item>
+    
+  </channel>
+</rss>

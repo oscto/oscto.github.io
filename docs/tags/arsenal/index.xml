@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arsenal on Channing&#39;s 自话自说...</title>
+    <link>https://oscto.github.io/tags/arsenal/</link>
+    <description>Recent content in Arsenal on Channing&#39;s 自话自说...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 16 Jan 2021 13:57:48 +0800</lastBuildDate><atom:link href="https://oscto.github.io/tags/arsenal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>技能树</title>
+      <link>https://oscto.github.io/tech-tree/</link>
+      <pubDate>Sat, 16 Jan 2021 13:57:48 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/tech-tree/</guid>
+      <description>延时队列  Redis Sorted Sets 基于有序集合+ score Redis Expiry Key 基于 Key 的过期时间 RabbitMQ 延时队列,基于 TTL 和 DXL Kafka 时间轮  参考  延时队列：基于 Redis 的实现  </description>
+    </item>
+    
+    <item>
+      <title>兵工厂</title>
+      <link>https://oscto.github.io/arsenal/</link>
+      <pubDate>Wed, 30 Dec 2020 13:51:25 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/arsenal/</guid>
+      <description>Eureka 云端服务发现，一个基于 REST 的服务，用于定位服务，以实现云端中间层服务发现和故障转移。
+Consul 提供了对服务发现、配置和功能性细分(segmentation functionality)全面控制的服务网格(service mersh)解决方案。
+Socat Linux 下的一个多功能的网络工具，名字来由是 「Socket CAT」。其功能与有瑞士军刀之称的 Netcat 类似，可以看做是 Netcat 的加强版。
+Apache Pulsar 是一个用于服务器到服务器的消息系统，具有多租户、高性能等优势
+参考  Apache Pulsar 介绍 发布订阅消息系统 Apache Pulsar 简介  </description>
+    </item>
+    
+  </channel>
+</rss>

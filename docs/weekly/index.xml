@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weeklies on Channing&#39;s 自话自说...</title>
+    <link>https://oscto.github.io/weekly/</link>
+    <description>Recent content in Weeklies on Channing&#39;s 自话自说...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 24 Jan 2021 18:20:25 +0800</lastBuildDate><atom:link href="https://oscto.github.io/weekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>每周推荐文章-2021 年</title>
+      <link>https://oscto.github.io/weekly/weekly-recommend-2021/</link>
+      <pubDate>Sun, 24 Jan 2021 18:20:25 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/weekly/weekly-recommend-2021/</guid>
+      <description> 记录每周 5 篇自认为比较优秀的文章
+ 2021年01月 第3周  年薪百万的阿里P8，每天都在干些啥？ 放弃微服务，我们为什么重回单体架构？ 为啥这么多公司用 ZooKeeper？它到底解决了什么问题？ Golang是怎么利用epoll的 聊聊最近互联网圈的另一场演讲  第4周  下一代消息队列pulsar到底是什么？ 3+1保障：高可用系统稳定性是如何炼成的？ Unicode 和 UTF-8 是什么关系？本文为你解惑 IPv6乌托邦 如何使用Prometheus轻松实现集群监控？  </description>
+    </item>
+    
+    <item>
+      <title>每周推荐文章-2020 年</title>
+      <link>https://oscto.github.io/weekly/weekly-recommend-2020/</link>
+      <pubDate>Sun, 20 Dec 2020 18:20:25 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/weekly/weekly-recommend-2020/</guid>
+      <description> 记录每周 5 篇自认为比较优秀的文章
+ 2020年12月 第三周  软件开发从业18年，我总结了9个最有价值的经验 从未如此简单：10分钟带你逆袭Kafka！ 漫画 | 一台Linux服务器最多能支撑多少个TCP连接？ 爱奇艺微服务标准技术架构实践 聊聊微服务架构中的事务处理  第四周  一文详细讲解API网关核心功能和API管理扩展 高性能Mysql主从架构的复制原理及配置详解 PostgreSQL数据类型，一篇就够了 微服务架构：基于微服务和Docker容器技术的PaaS云平台架构设计（微服务架构实施原理） RocketMq架构简析  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,527 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Channing&#39;s 自话自说...</title>
+        <link>https://oscto.github.io/posts/</link>
+        <description>Recent content in Posts on Channing&#39;s 自话自说...</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Tue, 08 Dec 2020 13:31:03 +0800</lastBuildDate>
+        <atom:link href="https://oscto.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Ubuntu 软件列表</title>
+            <link>https://oscto.github.io/posts/ubuntu/</link>
+            <pubDate>Tue, 08 Dec 2020 13:31:03 +0800</pubDate>
+            
+            <guid>https://oscto.github.io/posts/ubuntu/</guid>
+            <description>记录进几年在 Linux(Ubuntu 系列) Desktop 环境下使用过的软件 </description>
+            <content type="html"><![CDATA[<h3 id="记录进几年在-linuxubuntu-系列-desktop-环境下使用过的软件">记录进几年在 Linux(Ubuntu 系列) Desktop 环境下使用过的软件</h3>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Ubuntu 安装 Oh My Zsh</title>
+            <link>https://oscto.github.io/posts/ubuntu-install-oh-my-zsh/</link>
+            <pubDate>Wed, 25 Jul 2018 23:04:43 +0800</pubDate>
+            
+            <guid>https://oscto.github.io/posts/ubuntu-install-oh-my-zsh/</guid>
+            <description>查看系统支持的 shells
+cat /etc/shells  安装 zsh
+sudo apt install zsh  下载 oh-my-zsh：
+sh -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&amp;quot;  下载 zsh-autosuggestions（历史记录自动完成插件）：
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions  配置 zsh：
+vim ~/.zshrc # 添加插件 plugins=(git autojump zsh-autosuggestions laravel composer history golang ubuntu vagrant)  添加 source：
+source ~/.zshrc  修改为默认 shell
+chsh -s /bin/zsh  参考文献：
+ oh-my-zsh(github) zsh-autosuggestions(github)  </description>
+            <content type="html"><![CDATA[<p>查看系统支持的 shells</p>
+<pre><code>cat /etc/shells
+</code></pre>
+<p>安装 zsh</p>
+<pre><code>sudo apt install zsh
+</code></pre>
+<p>下载 oh-my-zsh：</p>
+<pre><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre>
+<p>下载 zsh-autosuggestions（历史记录自动完成插件）：</p>
+<pre><code>git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
+</code></pre>
+<p>配置 zsh：</p>
+<pre><code>vim ~/.zshrc
+# 添加插件
+plugins=(git autojump zsh-autosuggestions laravel composer history golang ubuntu vagrant)
+</code></pre>
+<p>添加 source：</p>
+<pre><code>source ~/.zshrc
+</code></pre>
+<p>修改为默认 shell</p>
+<pre><code>chsh -s /bin/zsh
+</code></pre>
+<p>参考文献：</p>
+<ul>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh(github)</a></li>
+<li><a href="https://github.com/zsh-users/zsh-autosuggestions">zsh-autosuggestions(github)</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Ubuntu-14-04-LTS-安装 NVIDIA-GTX-650显卡驱动</title>
+            <link>https://oscto.github.io/posts/ubuntu-install-nvidia/</link>
+            <pubDate>Wed, 25 Jul 2018 23:04:43 +0800</pubDate>
+            
+            <guid>https://oscto.github.io/posts/ubuntu-install-nvidia/</guid>
+            <description>Update 2016.07.04 添加对 Ubuntu 16.04 的支持 Ubuntu 14.04 LTS 出了一段时间了,对于喜欢折腾的我来说，具有很强的吸引力。 Ubuntu下载、安装很简单。其实我也搞不懂，为什么Ubuntu会搞个Ubuntu Kylin。 给我的感觉就是花俏了，但是稳定性更加差了。Linux系统其实很稳定，不稳定的是他的UI。
+电脑基本配置： 内存：16 GB CPU：Intel® Core™ i5-2300 CPU @ 2.80GHz × 4 显卡：GeForce GTX 650 因为是安装GTX显卡驱动，这里就说下关于Ubuntu对显卡的支持，它是分开源和闭源的，如果不是 追求这玩意，其实开源的驱动也很不错了。闭源的驱动可以直接安装。
+开始安装显卡驱动。
+安装依赖：
+sudo apt-get install build-essential pkg-config xserver-xorg-dev linux-headers-`uname -r` 禁止开源驱动：
+sudo vim /etc/modprobe.d/blacklist.conf 在blacklist.conf后面添加
+blacklist vga16fb blacklist nouveau blacklist rivafb blacklist nvidiafb blacklist rivatv #以下是对 Ubuntu 16.04 的支持 options nouveau modeset=0 alias nouveau off alias lbm-nouveau off 打开终端运行(只有 Ubuntu 16.04需要)</description>
+            <content type="html"><![CDATA[<p>Update 2016.07.04 添加对 Ubuntu 16.04 的支持
+Ubuntu 14.04 LTS 出了一段时间了,对于喜欢折腾的我来说，具有很强的吸引力。
+Ubuntu下载、安装很简单。其实我也搞不懂，为什么Ubuntu会搞个Ubuntu Kylin。
+给我的感觉就是花俏了，但是稳定性更加差了。Linux系统其实很稳定，不稳定的是他的UI。</p>
+<p>电脑基本配置：
+内存：16 GB
+CPU：Intel® Core™ i5-2300 CPU @ 2.80GHz × 4
+显卡：GeForce GTX 650
+因为是安装GTX显卡驱动，这里就说下关于Ubuntu对显卡的支持，它是分开源和闭源的，如果不是
+追求这玩意，其实开源的驱动也很不错了。闭源的驱动可以直接安装。</p>
+<p>开始安装显卡驱动。</p>
+<p>安装依赖：</p>
+<pre><code>sudo apt-get install build-essential pkg-config xserver-xorg-dev linux-headers-`uname -r`
+</code></pre><p>禁止开源驱动：</p>
+<pre><code>sudo vim /etc/modprobe.d/blacklist.conf
+</code></pre><p>在blacklist.conf后面添加</p>
+<pre><code>blacklist vga16fb
+blacklist nouveau
+blacklist rivafb
+blacklist nvidiafb
+blacklist rivatv
+#以下是对 Ubuntu 16.04 的支持
+options nouveau modeset=0
+alias nouveau off
+alias lbm-nouveau off
+</code></pre><p>打开终端运行(只有 Ubuntu 16.04需要)</p>
+<pre><code>sudo update-initramfs -u # 这句很重要
+</code></pre><p>重启电脑</p>
+<pre><code>sudo reboot
+</code></pre><p>进入命令模式：</p>
+<pre><code>Ctrl+Alt+F1
+</code></pre><p>关闭图形环境：</p>
+<pre><code>sudo service lightdm stop
+</code></pre><p>找到下好的run文件目录,安装</p>
+<pre><code>sudo sh ./NVIDIA-Linux-x86_64-331.67.run
+</code></pre><p>在安装的过程，需要阅读版权信息和一些相关就驱动的删除和某些模块的下载，这里全部选择同意和OK就行了，
+其他的不用管，直到安装完成。</p>
+<p>启动图形环境：</p>
+<pre><code>sudo service lightdm start
+</code></pre><p>出现Ubuntu登录界面,登录即可。</p>
+<p>查看是否安装成功：打开<strong>系统设置-》详细信息</strong>看到自己的显卡信息，则表示安装完成。
+<img src="//www.0x6f.info/usr/uploads/2014/04/4041497868.png" alt="Ubuntu14.04显卡信息"></p>
+<p><strong>官网下载：</strong></p>
+<ul>
+<li><a href="http://cn.download.nvidia.com/XFree86/Linux-x86_64/331.67/NVIDIA-Linux-x86_64-331.67.run">NVIDIA GTX 650</a></li>
+<li><a href="http://www.geforce.cn/drivers">更多驱动查找</a></li>
+</ul>
+<p><strong>参考文献：</strong></p>
+<ul>
+<li><a href="http://wiki.ubuntu.com.cn/NVIDIA#.E7.BC.96.E8.AF.91.E9.A9.B1.E5.8A.A8">Ubuntu 官网Wiki</a></li>
+<li><a href="http://www.geforce.cn/drivers">显卡驱动 官网下载地址</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>简说 AB 基准测试</title>
+            <link>https://oscto.github.io/posts/ab-benchmark-guides/</link>
+            <pubDate>Thu, 01 Jan 2015 19:58:49 +0800</pubDate>
+            
+            <guid>https://oscto.github.io/posts/ab-benchmark-guides/</guid>
+            <description>简述  Apache Benchmark简称ab.用的最广的一款基准测试工具之一.它是Apache默认安装的一部分. 通过模拟对指定URL任意数量请求来对Web服务器进行负载测试.具体功能如下:
+  对Web的模拟请求. 传输的总数据大小,以字节为单位. Web服务器每秒可以支撑的请求总数. 完成一个请求所化的时间,包括最长最短时间,以毫秒为单位.  安装 略
+选项说明 选项参数    参数 描述     -n 模拟的请求数   -c 模拟的并发请求数,默认为1.数值不能大于n的值   -t 执行模拟所需要的时间   -s 使用https协议,默认是http,不推荐使用   -B 描述   -p 用户POST请求   -u 用户PUT请求   -T 文件Header   -v 大于1时将打印警告和信息,3:HTTP响应代码,4+:标头信息   -i 执行HEAD请求,而不是GET请求   -w 通过HTML表格打印结果   -x 表示HTML属性的字符串,和-w一起使用   -y 表示HTML属性的字符串,和-w一起使用   -z 表示HTML属性的字符串,和-w一起使用   -C 可复用的标记,包含Cookie信息   -H 采用字段值对形式发送有效标头和请求   -A 提供服务器身份验证信息,发送信息采用base64编码   -P 采用Base64编码的字符串,字符串包含基本身份验证   -X 指定要使用的代理服务器   -V 显示版本号   -k 启用Keep-Alive功能,允许通过一个HTTP会话满足多个请求.</description>
+            <content type="html"><![CDATA[<h1 id="简述">简述</h1>
+<blockquote>
+<p>Apache Benchmark简称ab.用的最广的一款基准测试工具之一.它是Apache默认安装的一部分.
+通过模拟对指定URL任意数量请求来对Web服务器进行负载测试.具体功能如下:</p>
+</blockquote>
+<ol>
+<li>对Web的模拟请求.</li>
+<li>传输的总数据大小,以字节为单位.</li>
+<li>Web服务器每秒可以支撑的请求总数.</li>
+<li>完成一个请求所化的时间,包括最长最短时间,以毫秒为单位.</li>
+</ol>
+<h1 id="安装">安装</h1>
+<p>略</p>
+<h1 id="选项说明">选项说明</h1>
+<h2 id="选项参数">选项参数</h2>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-n</td>
+<td>模拟的请求数</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>模拟的并发请求数,默认为1.数值不能大于n的值</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>执行模拟所需要的时间</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>使用https协议,默认是http,不推荐使用</td>
+</tr>
+<tr>
+<td>-B</td>
+<td>描述</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>用户POST请求</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>用户PUT请求</td>
+</tr>
+<tr>
+<td>-T</td>
+<td>文件Header</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>大于1时将打印警告和信息,3:HTTP响应代码,4+:标头信息</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>执行HEAD请求,而不是GET请求</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>通过HTML表格打印结果</td>
+</tr>
+<tr>
+<td>-x</td>
+<td>表示HTML属性的字符串,和-w一起使用</td>
+</tr>
+<tr>
+<td>-y</td>
+<td>表示HTML属性的字符串,和-w一起使用</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>表示HTML属性的字符串,和-w一起使用</td>
+</tr>
+<tr>
+<td>-C</td>
+<td>可复用的标记,包含Cookie信息</td>
+</tr>
+<tr>
+<td>-H</td>
+<td>采用字段值对形式发送有效标头和请求</td>
+</tr>
+<tr>
+<td>-A</td>
+<td>提供服务器身份验证信息,发送信息采用base64编码</td>
+</tr>
+<tr>
+<td>-P</td>
+<td>采用Base64编码的字符串,字符串包含基本身份验证</td>
+</tr>
+<tr>
+<td>-X</td>
+<td>指定要使用的代理服务器</td>
+</tr>
+<tr>
+<td>-V</td>
+<td>显示版本号</td>
+</tr>
+<tr>
+<td>-k</td>
+<td>启用Keep-Alive功能,允许通过一个HTTP会话满足多个请求.默认禁用</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>隐藏中位数和标准偏差值</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>执行多于100个请求时隐藏进度输出</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>要创建gnuplot的路径,结果保存该文件</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>要创建csv的路径,结果保存该文件,建议用-g</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>显示用于ab选项列表</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>指定SSL/TLS协议,建议不使用</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/img/ab-benchmark/ab-help.png" alt="ab help"></p>
+<h2 id="使用示例">使用示例</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">/*简单测试,1个请求*/
+./ab -n <span style="color:#ae81ff">1</span> http://localhost/t.php
+/*简单测试,10个请求*/
+./ab -n <span style="color:#ae81ff">10</span> http://localhost/t.php
+/*并发测试,同时进行10个并发测试,直到100个请求为止*/
+./ab -n <span style="color:#ae81ff">100</span> -c <span style="color:#ae81ff">10</span> http://localhost/t.php
+/*并发测试,10秒内100个用户*/
+./ab -c <span style="color:#ae81ff">100</span> -t <span style="color:#ae81ff">10</span> http://localhost/t.php
+</code></pre></div><h2 id="响应说明">响应说明</h2>
+<p><img src="/img/ab-benchmark/ab-n_1_info.png" alt="简单测试,1个请求"></p>
+<h3 id="响应分类">响应分类</h3>
+<p>如上图所示
+响应可以分为四部分:</p>
+<blockquote>
+<ol>
+<li>服务器信息</li>
+</ol>
+</blockquote>
+<ol start="2">
+<li>文档信息</li>
+<li>连接信息</li>
+<li>请求分类细目</li>
+</ol>
+<blockquote>
+<ul>
+<li>主要是Web服务器运行的软件信息,这块信息可能会有误,出于系统管理员的设置</li>
+</ul>
+</blockquote>
+<ul>
+<li>Web文档信息,Document Path请求文档,Document Length 包含所有HTML,CSS,JS,IMAGE以及响应任何数据的字节数总和</li>
+<li>其中HTML transferred,Requests per second,Time per request都是关键字段.降低HTML transferred,Time per requestde,提高Requests per second的值</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>示例值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Concurrency Level</td>
+<td>所进行的请求时</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Time taken for tests</td>
+<td>运行所花的时间</td>
+<td>1.488 seconds</td>
+</tr>
+<tr>
+<td>Complete requests</td>
+<td>请求总数中已完成的请求总数</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Failed requests</td>
+<td>请求总数中失败的请求总数</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Total transferred</td>
+<td>请求响应中传输的总数,包括标头数据</td>
+<td>47650 bytes</td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted -->HTML transferred<!-- raw HTML omitted --></td>
+<td>整个请求传输的内容正文的总大小</td>
+<td>47072 bytes</td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted -->Requests per second<!-- raw HTML omitted --></td>
+<td>每秒支持的请求数</td>
+<td>0.67 [#/sec] (mean)</td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted -->Time per request<!-- raw HTML omitted --></td>
+<td>满足一个请求所需要花费的总时间</td>
+<td>1488.123 [ms] (mean)</td>
+</tr>
+<tr>
+<td>Time per request</td>
+<td>满足所有并发请求中的一个请求所需要花费的总时间</td>
+<td>1488.123 [ms] (mean, across all concurrent requests)</td>
+</tr>
+<tr>
+<td>Transfer rate</td>
+<td>每秒收到的字节数</td>
+<td>31.27 [Kbytes/sec] received</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<ul>
+<li>这些是告诉我们请求在每个过程状态中所需的时间.主要是Total字段最大和最小列.这两个列提供响应一个请求所花费最长和最短时间.</li>
+</ul>
+</blockquote>
+<h2 id="使用示例-1">使用示例</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#简单测试,1个请求</span>
+./ab -n <span style="color:#ae81ff">1</span> http://localhost/t.php
+</code></pre></div><p><img src="/img/ab-benchmark/ab-n_1.png" alt="简单测试,1个请求"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#简单测试,10个请求</span>
+./ab -n <span style="color:#ae81ff">10</span> http://localhost/t.php
+</code></pre></div><p><img src="/img/ab-benchmark/ab-n_10.png" alt="简单测试,10个请求"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#并发测试,同时进行10个并发测试,直到100个请求为止</span>
+./ab -n <span style="color:#ae81ff">100</span> -c <span style="color:#ae81ff">10</span> http://localhost/t.php
+</code></pre></div><p><img src="/img/ab-benchmark/ab-n_100-c_10.png" alt="并发测试,同时进行10个并发测试,直到100个请求为止"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#并发测试,10秒内100个用户</span>
+./ab -c <span style="color:#ae81ff">100</span> -t <span style="color:#ae81ff">10</span> http://localhost/t.php
+</code></pre></div><p><img src="/img/ab-benchmark/ab-c_100-t_10.png" alt="并发测试,10秒内100个用户"></p>
+<h2 id="参考文献">参考文献</h2>
+<ol>
+<li><a href="http://baike.baidu.com/view/1854349.htm">基准测试-百度篇</a></li>
+<li><a href="http://www.blogjava.net/qileilove/archive/2012/07/05/382241.html">基准测试-BlogJava</a></li>
+<li><a href="http://httpd.apache.org/docs/">Apache Doc</a></li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Sysbench 指南</title>
+            <link>https://oscto.github.io/posts/sysbench-guides/</link>
+            <pubDate>Sat, 18 Oct 2014 19:49:05 +0800</pubDate>
+            
+            <guid>https://oscto.github.io/posts/sysbench-guides/</guid>
+            <description>sysbench 指南 简介  sysbench是一个模块化的,跨平台,多线程基准测试工具,主要用于评估测试各种不同参数下的数据库负载情况.
+ 支持的测试模块  CPU 运算性能 磁盘 IO 性能 调度程序性能 内存分配及传输速度 POSIX 线程性能 数据库性能(OLTP 基准测试)  参考文献  http://imysql.com/2014/10/17/sysbench-full-user-manual.shtml  </description>
+            <content type="html"><![CDATA[<h1 id="sysbench-指南">sysbench 指南</h1>
+<h2 id="简介">简介</h2>
+<blockquote>
+<p>sysbench是一个模块化的,跨平台,多线程基准测试工具,主要用于评估测试各种不同参数下的数据库负载情况.</p>
+</blockquote>
+<h2 id="支持的测试模块">支持的测试模块</h2>
+<ul>
+<li>CPU 运算性能</li>
+<li>磁盘 IO 性能</li>
+<li>调度程序性能</li>
+<li>内存分配及传输速度</li>
+<li>POSIX 线程性能</li>
+<li>数据库性能(OLTP 基准测试)</li>
+</ul>
+<h3 id="参考文献">参考文献</h3>
+<ol>
+<li><a href="http://imysql.com/2014/10/17/sysbench-full-user-manual.shtml">http://imysql.com/2014/10/17/sysbench-full-user-manual.shtml</a></li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>简述 LevelDB</title>
+            <link>https://oscto.github.io/posts/level-db-info/</link>
+            <pubDate>Sun, 28 Sep 2014 19:27:37 +0800</pubDate>
+            
+            <guid>https://oscto.github.io/posts/level-db-info/</guid>
+            <description>简述 LevelDB 简介:  LevelDB 是 Google 基于 C++ 开发的 KV(Key/Value) 嵌入式数据库管理系统编程库,像是现在很 流行的 NoSQL,但又和现在的 NoSQL 有一定的区别.可以说 LevelDB 比 NoSQL 更加开放.LevelDB 的 作者 JeffreyDean 正是 Google 三大技术中的两大技术 BigTable 和 MapReduce 主要设计和实现者. 特征:  高性能,随机写40万次每秒,随机读6万次每秒 访问 API 接口化 数据压缩,减小存储空间,增快 IO 效率 内存消耗低,数据磁盘化 数据快照,读写互不干涉,保持数据一致性 自由开源软件(BSD开源协议)  成熟系统:  Facebook 的 RocksDB  架构图:  从 LevelDB 架构图中可以看出,整体结构可分为2个区域共6个部分.
+ 内存中:  Memtable Immutable  磁盘中:  Log 文件 manifest文件 Current 文件 SSTable  实现原理: LevelDB 在写入的时候,先会往 log 文件写入数据,成功后再将记录插入 Memtable (这里和 Redis 相反), 这里 log 文件主要是保证系统的稳定性,在系统崩溃能够恢复数据,使数据不丢失.</description>
+            <content type="html"><![CDATA[<h1 id="简述-leveldb">简述 LevelDB</h1>
+<h2 id="简介">简介:</h2>
+<pre><code> LevelDB 是 Google 基于 C++ 开发的 KV(Key/Value) 嵌入式数据库管理系统编程库,像是现在很
+ 流行的 NoSQL,但又和现在的 NoSQL 有一定的区别.可以说 LevelDB 比 NoSQL 更加开放.LevelDB 的
+ 作者 JeffreyDean 正是 Google 三大技术中的两大技术 BigTable 和 MapReduce 主要设计和实现者.
+</code></pre><h2 id="特征">特征:</h2>
+<ul>
+<li>高性能,随机写40万次每秒,随机读6万次每秒</li>
+<li>访问 API 接口化</li>
+<li>数据压缩,减小存储空间,增快 IO 效率</li>
+<li>内存消耗低,数据磁盘化</li>
+<li>数据快照,读写互不干涉,保持数据一致性</li>
+<li>自由开源软件(BSD开源协议)</li>
+</ul>
+<h2 id="成熟系统">成熟系统:</h2>
+<ul>
+<li>Facebook 的 RocksDB</li>
+</ul>
+<h2 id="架构图">架构图:</h2>
+<p><img src="/img/LevelDB.png" alt="LevelDB架构图"></p>
+<blockquote>
+<p>从 LevelDB 架构图中可以看出,整体结构可分为2个区域共6个部分.</p>
+</blockquote>
+<h3 id="内存中">内存中:</h3>
+<ul>
+<li>Memtable</li>
+<li>Immutable</li>
+</ul>
+<h3 id="磁盘中">磁盘中:</h3>
+<ul>
+<li>Log 文件</li>
+<li>manifest文件</li>
+<li>Current 文件</li>
+<li>SSTable</li>
+</ul>
+<h3 id="实现原理">实现原理:</h3>
+<pre><code>LevelDB 在写入的时候,先会往 log 文件写入数据,成功后再将记录插入 Memtable (这里和 Redis 相反), 
+这里 log 文件主要是保证系统的稳定性,在系统崩溃能够恢复数据,使数据不丢失.当 Memtable 达到一个峰值时,
+LevelDB 就会生成一个新的Log 文件,而 Memtable 就会成为 Immutable(不可变) Memtable.
+后台则会对 Immutable Memtable 进行数据导出到磁盘.形成一个新的 SSTable,
+SSTable正是有内存中数据不断导出并压缩后形成,而 SSTable 的所有文件会分成,
+第一层为 Level0,第二层为 Level1 以此类推,也就是 LevelDB 命名缘由.
+SSTable 的全称是 Sorted Strings Table，是一种不可修改的有序的键值映射，
+提供了查询、遍历等功能。每个SSTable由一系列的块（block）组成
+Current 这个文件内容只有一个信息,就是记录当前 manifest 文件名称.
+随着 LevelDB 运行过程对 SSTable 文件的写入,会产生新的 SSTable, 这是 manifest 也就会随之改变.
+</code></pre><h2 id="扩展阅读">扩展阅读:</h2>
+<p>NoSQL 类型之键值存储:</p>
+<ul>
+<li>最终一致性键值存储
+<ol>
+<li>Cassandra</li>
+<li>Dynamo</li>
+<li>Riak</li>
+</ol>
+</li>
+<li>内存键值存储
+<ol>
+<li>Memcached</li>
+<li>Redis</li>
+</ol>
+</li>
+<li>持久化键值存储
+<ol>
+<li>BigTable</li>
+<li>LevelDB</li>
+</ol>
+</li>
+</ul>
+<h2 id="nosql类型之文档存储">NoSQL类型之文档存储:</h2>
+<ul>
+<li>MongoDB</li>
+<li>CouchDB</li>
+<li>Riak</li>
+</ul>
+<h2 id="参考">参考</h2>
+<blockquote>
+<p>牛逼的 Google 三大论文,据说连牛逼哄哄的 HBase 都是根据这玩意来的,而且只是完成了论文的30%[英语有限不做翻译]:</p>
+</blockquote>
+<ul>
+<li><a href="http://research.google.com/archive/gfs.html">GFS文件分布式 2003</a></li>
+<li><a href="http://research.google.com/archive/mapreduce.html">MapReduce 2004</a></li>
+<li><a href="http://research.google.com/archive/bigtable.html">Bigtable 2006</a></li>
+<li><a href="https://pan.baidu.com/s/1QaGu4JXbV52tr3J4cn9SgQ">三大马车中文版本(网络版本,提取码: ef4i)</a></li>
+</ul>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

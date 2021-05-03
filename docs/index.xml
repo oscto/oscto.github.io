@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Channing&#39;s 自话自说...</title>
+    <link>https://oscto.github.io/</link>
+    <description>Recent content on Channing&#39;s 自话自说...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 24 Jan 2021 18:20:25 +0800</lastBuildDate><atom:link href="https://oscto.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>每周推荐文章-2021 年</title>
+      <link>https://oscto.github.io/weekly/weekly-recommend-2021/</link>
+      <pubDate>Sun, 24 Jan 2021 18:20:25 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/weekly/weekly-recommend-2021/</guid>
+      <description> 记录每周 5 篇自认为比较优秀的文章
+ 2021年01月 第3周  年薪百万的阿里P8，每天都在干些啥？ 放弃微服务，我们为什么重回单体架构？ 为啥这么多公司用 ZooKeeper？它到底解决了什么问题？ Golang是怎么利用epoll的 聊聊最近互联网圈的另一场演讲  第4周  下一代消息队列pulsar到底是什么？ 3+1保障：高可用系统稳定性是如何炼成的？ Unicode 和 UTF-8 是什么关系？本文为你解惑 IPv6乌托邦 如何使用Prometheus轻松实现集群监控？  </description>
+    </item>
+    
+    <item>
+      <title>技能树</title>
+      <link>https://oscto.github.io/tech-tree/</link>
+      <pubDate>Sat, 16 Jan 2021 13:57:48 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/tech-tree/</guid>
+      <description>延时队列  Redis Sorted Sets 基于有序集合+ score Redis Expiry Key 基于 Key 的过期时间 RabbitMQ 延时队列,基于 TTL 和 DXL Kafka 时间轮  参考  延时队列：基于 Redis 的实现  </description>
+    </item>
+    
+    <item>
+      <title>每天学习 5 个单词 2021-01月</title>
+      <link>https://oscto.github.io/words/words-2021-01/</link>
+      <pubDate>Wed, 30 Dec 2020 14:27:39 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/words/words-2021-01/</guid>
+      <description>2021 年 01 月 01月01日 1.implode vt 使内爆, vi 向内破裂,内爆,奔溃 why do these couples seem to always implode? 为什么他们好像总是闹分手呢? 2.couples n 夫妻,一对,一双 v 连接,交配 trouble couples 开心勿语 most couples want a traditional wedding. 多数情侣希望举办一个传统的婚礼 3.wedding n 婚礼,婚宴,结婚,结合 v 与...结婚 n 人名(wedding) (德)伟丁 wedding present 结婚礼物 today&#39;s our wedding anniversary. 今天是我们的结婚纪念日 4. anniversary n 周年纪念日 5.celebrated adj 著名的,有名望的 v 庆祝 less celebrated 没有那么出名 celebrate with 庆祝 01月02日  life&amp;rsquo;s too short to be ruled by fear.</description>
+    </item>
+    
+    <item>
+      <title>兵工厂</title>
+      <link>https://oscto.github.io/arsenal/</link>
+      <pubDate>Wed, 30 Dec 2020 13:51:25 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/arsenal/</guid>
+      <description>Eureka 云端服务发现，一个基于 REST 的服务，用于定位服务，以实现云端中间层服务发现和故障转移。
+Consul 提供了对服务发现、配置和功能性细分(segmentation functionality)全面控制的服务网格(service mersh)解决方案。
+Socat Linux 下的一个多功能的网络工具，名字来由是 「Socket CAT」。其功能与有瑞士军刀之称的 Netcat 类似，可以看做是 Netcat 的加强版。
+Apache Pulsar 是一个用于服务器到服务器的消息系统，具有多租户、高性能等优势
+参考  Apache Pulsar 介绍 发布订阅消息系统 Apache Pulsar 简介  </description>
+    </item>
+    
+    <item>
+      <title>每天学习 5 个单词 2020-12月</title>
+      <link>https://oscto.github.io/words/words-2020-12/</link>
+      <pubDate>Tue, 29 Dec 2020 23:10:31 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/words/words-2020-12/</guid>
+      <description>2020年12月 12月30日 1.conflict n 冲突,矛盾,争执, vi 冲突,抵触,争执,战斗 a conflict between two cultures // 两种文化的冲突 2.cultures n 文明,文化 traditional cultures // 传统文化 3.traditional adj 传统的,惯例的 traditional chinese //繁体中文 4.marriage n 结婚,婚姻生活,密切结合,合并 n 人名,(英)马里奇 the state of being married //婚姻生活,已婚状态 5.relationship n 关系,关联 interpersonal relationship // 人际关系 their relationship flowered // 他们的关系变得更好了 12月31日 每日一句 // 不念过往,未来可期.(我们改变不了过去,但是我们可以创造未来) we can&#39;t change the past,But we can make the future. 1.recurse n 递归 So we recurse with the rest of the list and try it again.</description>
+    </item>
+    
+    <item>
+      <title>每周推荐文章-2020 年</title>
+      <link>https://oscto.github.io/weekly/weekly-recommend-2020/</link>
+      <pubDate>Sun, 20 Dec 2020 18:20:25 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/weekly/weekly-recommend-2020/</guid>
+      <description> 记录每周 5 篇自认为比较优秀的文章
+ 2020年12月 第三周  软件开发从业18年，我总结了9个最有价值的经验 从未如此简单：10分钟带你逆袭Kafka！ 漫画 | 一台Linux服务器最多能支撑多少个TCP连接？ 爱奇艺微服务标准技术架构实践 聊聊微服务架构中的事务处理  第四周  一文详细讲解API网关核心功能和API管理扩展 高性能Mysql主从架构的复制原理及配置详解 PostgreSQL数据类型，一篇就够了 微服务架构：基于微服务和Docker容器技术的PaaS云平台架构设计（微服务架构实施原理） RocketMq架构简析  </description>
+    </item>
+    
+    <item>
+      <title>Reading Hub</title>
+      <link>https://oscto.github.io/reading/</link>
+      <pubDate>Tue, 08 Dec 2020 20:58:53 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/reading/</guid>
+      <description>记录每年阅读的书 2020 年 2019 年 </description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 软件列表</title>
+      <link>https://oscto.github.io/posts/ubuntu/</link>
+      <pubDate>Tue, 08 Dec 2020 13:31:03 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/ubuntu/</guid>
+      <description>记录进几年在 Linux(Ubuntu 系列) Desktop 环境下使用过的软件 </description>
+    </item>
+    
+    <item>
+      <title>关于本 Blog</title>
+      <link>https://oscto.github.io/about/</link>
+      <pubDate>Tue, 08 Dec 2020 12:49:14 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/about/</guid>
+      <description> 记录毕业后这几年的历程
+ </description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 安装 Oh My Zsh</title>
+      <link>https://oscto.github.io/posts/ubuntu-install-oh-my-zsh/</link>
+      <pubDate>Wed, 25 Jul 2018 23:04:43 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/ubuntu-install-oh-my-zsh/</guid>
+      <description>查看系统支持的 shells
+cat /etc/shells  安装 zsh
+sudo apt install zsh  下载 oh-my-zsh：
+sh -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&amp;quot;  下载 zsh-autosuggestions（历史记录自动完成插件）：
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions  配置 zsh：
+vim ~/.zshrc # 添加插件 plugins=(git autojump zsh-autosuggestions laravel composer history golang ubuntu vagrant)  添加 source：
+source ~/.zshrc  修改为默认 shell
+chsh -s /bin/zsh  参考文献：
+ oh-my-zsh(github) zsh-autosuggestions(github)  </description>
+    </item>
+    
+    <item>
+      <title>Ubuntu-14-04-LTS-安装 NVIDIA-GTX-650显卡驱动</title>
+      <link>https://oscto.github.io/posts/ubuntu-install-nvidia/</link>
+      <pubDate>Wed, 25 Jul 2018 23:04:43 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/ubuntu-install-nvidia/</guid>
+      <description>Update 2016.07.04 添加对 Ubuntu 16.04 的支持 Ubuntu 14.04 LTS 出了一段时间了,对于喜欢折腾的我来说，具有很强的吸引力。 Ubuntu下载、安装很简单。其实我也搞不懂，为什么Ubuntu会搞个Ubuntu Kylin。 给我的感觉就是花俏了，但是稳定性更加差了。Linux系统其实很稳定，不稳定的是他的UI。
+电脑基本配置： 内存：16 GB CPU：Intel® Core™ i5-2300 CPU @ 2.80GHz × 4 显卡：GeForce GTX 650 因为是安装GTX显卡驱动，这里就说下关于Ubuntu对显卡的支持，它是分开源和闭源的，如果不是 追求这玩意，其实开源的驱动也很不错了。闭源的驱动可以直接安装。
+开始安装显卡驱动。
+安装依赖：
+sudo apt-get install build-essential pkg-config xserver-xorg-dev linux-headers-`uname -r` 禁止开源驱动：
+sudo vim /etc/modprobe.d/blacklist.conf 在blacklist.conf后面添加
+blacklist vga16fb blacklist nouveau blacklist rivafb blacklist nvidiafb blacklist rivatv #以下是对 Ubuntu 16.04 的支持 options nouveau modeset=0 alias nouveau off alias lbm-nouveau off 打开终端运行(只有 Ubuntu 16.04需要)</description>
+    </item>
+    
+    <item>
+      <title>简说 AB 基准测试</title>
+      <link>https://oscto.github.io/posts/ab-benchmark-guides/</link>
+      <pubDate>Thu, 01 Jan 2015 19:58:49 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/ab-benchmark-guides/</guid>
+      <description>简述  Apache Benchmark简称ab.用的最广的一款基准测试工具之一.它是Apache默认安装的一部分. 通过模拟对指定URL任意数量请求来对Web服务器进行负载测试.具体功能如下:
+  对Web的模拟请求. 传输的总数据大小,以字节为单位. Web服务器每秒可以支撑的请求总数. 完成一个请求所化的时间,包括最长最短时间,以毫秒为单位.  安装 略
+选项说明 选项参数    参数 描述     -n 模拟的请求数   -c 模拟的并发请求数,默认为1.数值不能大于n的值   -t 执行模拟所需要的时间   -s 使用https协议,默认是http,不推荐使用   -B 描述   -p 用户POST请求   -u 用户PUT请求   -T 文件Header   -v 大于1时将打印警告和信息,3:HTTP响应代码,4+:标头信息   -i 执行HEAD请求,而不是GET请求   -w 通过HTML表格打印结果   -x 表示HTML属性的字符串,和-w一起使用   -y 表示HTML属性的字符串,和-w一起使用   -z 表示HTML属性的字符串,和-w一起使用   -C 可复用的标记,包含Cookie信息   -H 采用字段值对形式发送有效标头和请求   -A 提供服务器身份验证信息,发送信息采用base64编码   -P 采用Base64编码的字符串,字符串包含基本身份验证   -X 指定要使用的代理服务器   -V 显示版本号   -k 启用Keep-Alive功能,允许通过一个HTTP会话满足多个请求.</description>
+    </item>
+    
+    <item>
+      <title>Sysbench 指南</title>
+      <link>https://oscto.github.io/posts/sysbench-guides/</link>
+      <pubDate>Sat, 18 Oct 2014 19:49:05 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/sysbench-guides/</guid>
+      <description>sysbench 指南 简介  sysbench是一个模块化的,跨平台,多线程基准测试工具,主要用于评估测试各种不同参数下的数据库负载情况.
+ 支持的测试模块  CPU 运算性能 磁盘 IO 性能 调度程序性能 内存分配及传输速度 POSIX 线程性能 数据库性能(OLTP 基准测试)  参考文献  http://imysql.com/2014/10/17/sysbench-full-user-manual.shtml  </description>
+    </item>
+    
+    <item>
+      <title>简述 LevelDB</title>
+      <link>https://oscto.github.io/posts/level-db-info/</link>
+      <pubDate>Sun, 28 Sep 2014 19:27:37 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/level-db-info/</guid>
+      <description>简述 LevelDB 简介:  LevelDB 是 Google 基于 C++ 开发的 KV(Key/Value) 嵌入式数据库管理系统编程库,像是现在很 流行的 NoSQL,但又和现在的 NoSQL 有一定的区别.可以说 LevelDB 比 NoSQL 更加开放.LevelDB 的 作者 JeffreyDean 正是 Google 三大技术中的两大技术 BigTable 和 MapReduce 主要设计和实现者. 特征:  高性能,随机写40万次每秒,随机读6万次每秒 访问 API 接口化 数据压缩,减小存储空间,增快 IO 效率 内存消耗低,数据磁盘化 数据快照,读写互不干涉,保持数据一致性 自由开源软件(BSD开源协议)  成熟系统:  Facebook 的 RocksDB  架构图:  从 LevelDB 架构图中可以看出,整体结构可分为2个区域共6个部分.
+ 内存中:  Memtable Immutable  磁盘中:  Log 文件 manifest文件 Current 文件 SSTable  实现原理: LevelDB 在写入的时候,先会往 log 文件写入数据,成功后再将记录插入 Memtable (这里和 Redis 相反), 这里 log 文件主要是保证系统的稳定性,在系统崩溃能够恢复数据,使数据不丢失.</description>
+    </item>
+    
+  </channel>
+</rss>

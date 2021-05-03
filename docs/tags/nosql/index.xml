@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NoSQL on Channing&#39;s 自话自说...</title>
+    <link>https://oscto.github.io/tags/nosql/</link>
+    <description>Recent content in NoSQL on Channing&#39;s 自话自说...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 28 Sep 2014 19:27:37 +0800</lastBuildDate><atom:link href="https://oscto.github.io/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>简述 LevelDB</title>
+      <link>https://oscto.github.io/posts/level-db-info/</link>
+      <pubDate>Sun, 28 Sep 2014 19:27:37 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/level-db-info/</guid>
+      <description>简述 LevelDB 简介:  LevelDB 是 Google 基于 C++ 开发的 KV(Key/Value) 嵌入式数据库管理系统编程库,像是现在很 流行的 NoSQL,但又和现在的 NoSQL 有一定的区别.可以说 LevelDB 比 NoSQL 更加开放.LevelDB 的 作者 JeffreyDean 正是 Google 三大技术中的两大技术 BigTable 和 MapReduce 主要设计和实现者. 特征:  高性能,随机写40万次每秒,随机读6万次每秒 访问 API 接口化 数据压缩,减小存储空间,增快 IO 效率 内存消耗低,数据磁盘化 数据快照,读写互不干涉,保持数据一致性 自由开源软件(BSD开源协议)  成熟系统:  Facebook 的 RocksDB  架构图:  从 LevelDB 架构图中可以看出,整体结构可分为2个区域共6个部分.
+ 内存中:  Memtable Immutable  磁盘中:  Log 文件 manifest文件 Current 文件 SSTable  实现原理: LevelDB 在写入的时候,先会往 log 文件写入数据,成功后再将记录插入 Memtable (这里和 Redis 相反), 这里 log 文件主要是保证系统的稳定性,在系统崩溃能够恢复数据,使数据不丢失.</description>
+    </item>
+    
+  </channel>
+</rss>

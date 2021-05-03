@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基准测试 on Channing&#39;s 自话自说...</title>
+    <link>https://oscto.github.io/tags/%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95/</link>
+    <description>Recent content in 基准测试 on Channing&#39;s 自话自说...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 01 Jan 2015 19:58:49 +0800</lastBuildDate><atom:link href="https://oscto.github.io/tags/%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>简说 AB 基准测试</title>
+      <link>https://oscto.github.io/posts/ab-benchmark-guides/</link>
+      <pubDate>Thu, 01 Jan 2015 19:58:49 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/ab-benchmark-guides/</guid>
+      <description>简述  Apache Benchmark简称ab.用的最广的一款基准测试工具之一.它是Apache默认安装的一部分. 通过模拟对指定URL任意数量请求来对Web服务器进行负载测试.具体功能如下:
+  对Web的模拟请求. 传输的总数据大小,以字节为单位. Web服务器每秒可以支撑的请求总数. 完成一个请求所化的时间,包括最长最短时间,以毫秒为单位.  安装 略
+选项说明 选项参数    参数 描述     -n 模拟的请求数   -c 模拟的并发请求数,默认为1.数值不能大于n的值   -t 执行模拟所需要的时间   -s 使用https协议,默认是http,不推荐使用   -B 描述   -p 用户POST请求   -u 用户PUT请求   -T 文件Header   -v 大于1时将打印警告和信息,3:HTTP响应代码,4+:标头信息   -i 执行HEAD请求,而不是GET请求   -w 通过HTML表格打印结果   -x 表示HTML属性的字符串,和-w一起使用   -y 表示HTML属性的字符串,和-w一起使用   -z 表示HTML属性的字符串,和-w一起使用   -C 可复用的标记,包含Cookie信息   -H 采用字段值对形式发送有效标头和请求   -A 提供服务器身份验证信息,发送信息采用base64编码   -P 采用Base64编码的字符串,字符串包含基本身份验证   -X 指定要使用的代理服务器   -V 显示版本号   -k 启用Keep-Alive功能,允许通过一个HTTP会话满足多个请求.</description>
+    </item>
+    
+    <item>
+      <title>Sysbench 指南</title>
+      <link>https://oscto.github.io/posts/sysbench-guides/</link>
+      <pubDate>Sat, 18 Oct 2014 19:49:05 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/sysbench-guides/</guid>
+      <description>sysbench 指南 简介  sysbench是一个模块化的,跨平台,多线程基准测试工具,主要用于评估测试各种不同参数下的数据库负载情况.
+ 支持的测试模块  CPU 运算性能 磁盘 IO 性能 调度程序性能 内存分配及传输速度 POSIX 线程性能 数据库性能(OLTP 基准测试)  参考文献  http://imysql.com/2014/10/17/sysbench-full-user-manual.shtml  </description>
+    </item>
+    
+  </channel>
+</rss>

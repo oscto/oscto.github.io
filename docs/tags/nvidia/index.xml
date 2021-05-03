@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NVIDIA on Channing&#39;s 自话自说...</title>
+    <link>https://oscto.github.io/tags/nvidia/</link>
+    <description>Recent content in NVIDIA on Channing&#39;s 自话自说...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 25 Jul 2018 23:04:43 +0800</lastBuildDate><atom:link href="https://oscto.github.io/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu-14-04-LTS-安装 NVIDIA-GTX-650显卡驱动</title>
+      <link>https://oscto.github.io/posts/ubuntu-install-nvidia/</link>
+      <pubDate>Wed, 25 Jul 2018 23:04:43 +0800</pubDate>
+      
+      <guid>https://oscto.github.io/posts/ubuntu-install-nvidia/</guid>
+      <description>Update 2016.07.04 添加对 Ubuntu 16.04 的支持 Ubuntu 14.04 LTS 出了一段时间了,对于喜欢折腾的我来说，具有很强的吸引力。 Ubuntu下载、安装很简单。其实我也搞不懂，为什么Ubuntu会搞个Ubuntu Kylin。 给我的感觉就是花俏了，但是稳定性更加差了。Linux系统其实很稳定，不稳定的是他的UI。
+电脑基本配置： 内存：16 GB CPU：Intel® Core™ i5-2300 CPU @ 2.80GHz × 4 显卡：GeForce GTX 650 因为是安装GTX显卡驱动，这里就说下关于Ubuntu对显卡的支持，它是分开源和闭源的，如果不是 追求这玩意，其实开源的驱动也很不错了。闭源的驱动可以直接安装。
+开始安装显卡驱动。
+安装依赖：
+sudo apt-get install build-essential pkg-config xserver-xorg-dev linux-headers-`uname -r` 禁止开源驱动：
+sudo vim /etc/modprobe.d/blacklist.conf 在blacklist.conf后面添加
+blacklist vga16fb blacklist nouveau blacklist rivafb blacklist nvidiafb blacklist rivatv #以下是对 Ubuntu 16.04 的支持 options nouveau modeset=0 alias nouveau off alias lbm-nouveau off 打开终端运行(只有 Ubuntu 16.04需要)</description>
+    </item>
+    
+  </channel>
+</rss>
